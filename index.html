@@ -69,7 +69,7 @@
                 <img class="logo_default" src="assets/images/logo_dark.png" alt="logo" />
             </a>
             <ul class="navbar-nav">
-                <li><a class="nav-link page-scroll" href="#home_section">首页</a></li>
+                <li><a class="nav-link active page-scroll" href="#home_section">首页</a></li>
                 <li><a class="nav-link page-scroll" href="#about">关于期莜</a></li>
                 <li><a class="nav-link page-scroll" href="#portfolio">作品集</a></li>
                 <li><a class="nav-link page-scroll" href="#ideas">脑洞库</a></li>
@@ -474,7 +474,7 @@
     	<div class="row justify-content-center">
         	<div class="col-xl-6 col-lg-7 col-md-9 text-center">
             	<div class="heading_s1 heading_light animation" data-animation="fadeInUp" data-animation-delay="0.02s">
-                	<h2>最新博客</h2>
+                	<h2><a class = "text-white" href="blogs-dark.html">最新博客</a></h2>
                 </div>
                 <p class="animation text-white" data-animation="fadeInUp" data-animation-delay="0.03s">
                     应该很多都不会是正经东西……
@@ -489,24 +489,47 @@
         <div class="row justify-content-center animation" data-animation="fadeInUp" data-animation-delay="0.04s">
         	<div class="col-lg-4 col-md-6">
             	<div class="blog_post blog_style2 box_dark text_white">
-                	<div class="blog_img">
-                        <a href="#">
-                            <img src="assets/images/blog_small_img1.jpg" alt="blog_small_img1">
+                    <div class="blog_img">
+                        <a href="blogs/webdev.html">
+                            <img src="assets/images/webdev_img_adj.jpg" alt="webdev_img_adj">
                         </a>
                     </div>
                     <div class="blog_content">
-                    	<div class="blog_text">
-                        	<div class="post_category" style="color:#27ce78">生活记录</div>
-                            <h5 class="blog_title"><a href="#">三月第一周Time Log</a></h5>
+                        <div class="blog_text">
+                            <div class="post_category"><a style="color: #27ce78">创作感言</a></div>
+                            <h5 class="blog_title"><a href="blogs/webdev.html">个人网站开发感想</a></h5>
                             <ul class="list_none blog_meta">
-                                <li><i class="ion-calendar"></i>&ensp;2022年3月7日</a></li>
-                        	</ul>
-                            <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text</p>
-                            <a href="#" class="read_more">阅读全文</a>
+                                <li><i class="ion-calendar"></i>&ensp;2022年3月9日</a></li>
+                            </ul>
+                            <p>虽然撑死只是个MVP，但话痨期莜已经攒了好多话想说了。</p>
+                            <a href="blogs/webdev.html" class="read_more">阅读全文</a>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="col-lg-4 col-md-6">
+            	<div class="blog_post blog_style2 box_dark text_white">
+                    <div class="blog_img">
+                        <a href="blogs/time_log_031.html">
+                            <img src="assets/images/time_log_031_img_adj.png" alt="time_log_3-1_img_adj">
+                        </a>
+                    </div>
+                    <div class="blog_content">
+                        <div class="blog_text">
+                            <div class="post_category"><a style="color: #27ce78">生活记录</a></div>
+                            <h5 class="blog_title"><a href="blogs/time_log_031.html">三月第一周Time Log</a></h5>
+                            <ul class="list_none blog_meta">
+                                <li><i class="ion-calendar"></i>&ensp;2022年3月7日</a></li>
+                            </ul>
+                            <p>大概就是回看一下这周的time log，再做一点写作总结读作唠嗑的东西。</p>
+                            <a href="blogs/time_log_031.html" class="read_more">阅读全文</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-right">
+            <a href="blogs-dark.html" class="btn btn-outline-white rounded-0">查看全部</a>
         </div>
     </div>
 </section>
@@ -522,30 +545,22 @@
                     <div class="comment-title title-white mb-2 mb-sm-4">
                         <h5>(0) 留言板</h5>
                     </div>
-                    <div class="field_form form_style2">
-                        <form method="post" name="enq">
+                    <form class="field_form form_style2">
                         <div class="row">
-                            <div class="form-group col-md-4">
-                                <input required="required" placeholder="你的名字 *" id="first-name" class="form-control" name="name" type="text">
-                             </div>
-                            <div class="form-group col-md-4">
-                                <input required="required" placeholder="你的邮箱 *" id="email" class="form-control" name="email" type="email">
+                        	<div class="form-group col-md-12">
+                                <textarea rows="4" name="message" type="text" class="form-control" placeholder="还没做呢，发不出去的，你要真的现在就想发那只能给我写邮件，我来手动放上去（" required="required"></textarea>
                             </div>
-                            <div class="form-group col-md-4">
-                                <input placeholder="标题" id="subject" class="form-control" name="subject" type="text">
+                            <div class="form-group col-md-6">
+                                <input name="name" type="text" class="form-control" placeholder="你的名字" required="required">
                             </div>
-                            <div class="form-group col-lg-12">
-                                <textarea required="required" placeholder="好像只能给我发封邮件不能实时显示（而且不保证成功），还没仔细研究，但会做的都会做的x *" id="description" class="form-control" name="message" rows="5"></textarea>
+                            <div class="form-group col-md-6">
+                                <input name="email" type="email" class="form-control" placeholder="你的邮箱">
                             </div>
-                            <div class="col-lg-2 text-center">
-                                <button type="submit" class="btn btn-default rounded-0 btn-block" id="submitButton" name="submit" value="Submit">提交</button>
-                            </div>
-                            <div class="col-lg-12 text-center">
-                                <div id="alert-msg" class="alert-msg text-center"></div>
+                            <div class="form-group col-md-12">
+                                <button value="Submit" name="submit" class="btn btn-default rounded-0" type="submit">发送</button>
                             </div>
                         </div>
-                    </form>		
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
