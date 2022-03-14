@@ -1405,17 +1405,3 @@ section.pb_70, .pb_70 {
     padding: 15px;
 }
 }
-
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  width: 82%;
-}
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 82%;
-  height: 82%;
-}
